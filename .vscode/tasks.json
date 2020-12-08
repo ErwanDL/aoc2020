@@ -14,10 +14,8 @@
 			"dependsOn": [
 				"Build"
 			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
+			"group": "build",
+			"problemMatcher": []
 		},
 		{
 			"type": "shell",
@@ -36,7 +34,10 @@
 			"problemMatcher": [
 				"$gcc"
 			],
-			"group": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 			"detail": "compiler: /usr/bin/g++"
 		}
 	]
