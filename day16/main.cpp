@@ -19,7 +19,7 @@ std::vector<std::string> split(const std::string& str, const std::string& separa
     std::size_t separatorPos;
 
     while ((separatorPos = str.find(separator, cursor)) != std::string::npos) {
-        res.push_back(str.substr(cursor, separatorPos));
+        res.push_back(str.substr(cursor, separatorPos - cursor));
         cursor = separatorPos + separator.size();
     }
     res.push_back(str.substr(cursor));
