@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
             "args": [
-                "${fileDirname}/input.txt"
+                "${fileDirname}/test.txt"
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
