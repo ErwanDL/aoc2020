@@ -15,7 +15,7 @@
 // So we have a spacing of (2, 0) between a hexagon and its E/W neighbor, and (1, 1) between a
 // hexagon and its NE/NW/SE/SW neighbor.
 const std::array<std::pair<int, int>, 6> NEIGHBOR_OFFSETS{
-    {{-2, 0.0}, {2, 0.0}, {-1, 1}, {1, 1}, {-1, -1}, {1, -1}}};
+    {{-2, 0}, {2, 0}, {-1, 1}, {1, 1}, {-1, -1}, {1, -1}}};
 
 struct PairOfintsHash {
     size_t operator()(const std::pair<int, int>& v) const {
@@ -80,8 +80,8 @@ int main(int argc, char* argv[]) {
     TileSet blackTiles{};
 
     while (std::getline(inputFile, buffer)) {
-        int x = 0.0;
-        int y = 0.0;
+        int x = 0;
+        int y = 0;
 
         auto it = buffer.begin();
         auto end = buffer.end();
